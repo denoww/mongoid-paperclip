@@ -7,7 +7,7 @@ rescue LoadError
   exit
 end
 
-##
+## Comentado por Rodrigo pois a gem paperclip já lida com isso muito bem
 # the id of mongoid is not integer, correct the id_partitioin.
 #Paperclip.interpolates :id_partition do |attachment, style|
   #attachment.instance.id.to_s.scan(/.{4}/).join("/")
