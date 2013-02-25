@@ -7,11 +7,13 @@ rescue LoadError
   exit
 end
 
-##
+
+## Comentado esse bloco abaixo - Rodrigo Mendonça
 # the id of mongoid is not integer, correct the id_partitioin.
-Paperclip.interpolates :id_partition do |attachment, style|
-  attachment.instance.id.to_s.scan(/.{4}/).join("/")
-end
+#Paperclip.interpolates :id_partition do |attachment, style|
+  #attachment.instance.id.to_s.scan(/.{4}/).join("/")
+#end
+## Comentado esse bloco acima - Rodrigo Mendonça
 
 ##
 # The Mongoid::Paperclip extension
